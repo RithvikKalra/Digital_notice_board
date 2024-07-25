@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Notice Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="notice-board">
+    <div id="widgets-container">
+      <!-- Google Slide Integration -->
+      <div class="widget" id="google-slide">
+        <h2>Google Slide</h2>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQHMt5im27IQxWtwjUMnF9aWVBS5PlfAn1MdFZspW3JgV2ZKUQ7t7-DkR3V8FVnfr/pub?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+
+      <!-- Pomodoro Timer -->
+      <div class="widget" id="pomodoro-timer">
+        <h2>Pomodoro Timer</h2>
+        <div id="timer">
+          <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <!-- Google Spreadsheet -->
+      <div class="widget" id="google-spreadsheet">
+        <h2>Google Spreadsheet</h2>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTN4xyz5sdfsdf/edit?usp=sharing" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+
+      <!-- Poll Widget -->
+      <div class="widget" id="poll-widget">
+        <h2>Poll</h2>
+        <p>Which feature do you find most useful?</p>
+        <form id="poll-form">
+          <input type="radio" name="poll" value="Google Slide"> Google Slide<br>
+          <input type="radio" name="poll" value="Pomodoro Timer"> Pomodoro Timer<br>
+          <input type="radio" name="poll" value="Google Spreadsheet"> Google Spreadsheet<br>
+          <input type="submit" value="Submit">
+        </form>
+        <div id="poll-result"></div>
+      </div>
+
+      <!-- Book + Quote -->
+      <div class="widget" id="book-quote">
+        <h2>Book + Quote</h2>
+        <blockquote>
+          "The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt
+        </blockquote>
+      </div>
+
+      <!-- Announcements -->
+      <div class="widget" id="announcements">
+        <h2>Announcements</h2>
+        <marquee behavior="scroll" direction="left">Welcome to the Digital Notice Board! Stay tuned for updates.</marquee>
+      </div>
+
+      <!-- TIL (Today I Learned) Corner -->
+      <div class="widget" id="til-corner">
+        <h2>TIL (Today I Learned)</h2>
+        <p>Today I learned about the benefits of using a Pomodoro timer to increase productivity!</p>
+      </div>
+
+      <!-- Opportunity Board -->
+      <div class="widget" id="opportunity-board">
+        <h2>Opportunity Board</h2>
+        <p>Opportunity for other teams to solve interesting problems faced by other teams. Ex- Some repetitive mundane tasks done by a team could be solved by the AI team.</p>
+      </div>
+
+      <!-- Generic Leaderboard -->
+      <div class="widget" id="generic-leaderboard">
+        <h2>Generic Leaderboard</h2>
+        <ul>
+          <li>Most steps walked: 5000</li>
+          <li>Most pages read: 50</li>
+          <li>Most Pomodoro timers clocked: 8</li>
+        </ul>
+      </div>
+
+      <!-- Google Calendar Day View -->
+      <div class="widget" id="google-calendar">
+        <h2>Google Calendar</h2>
+        <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id@group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+      <!-- Google Keep Widget -->
+      <div class="widget" id="google-keep">
+        <h2>Google Keep</h2>
+        <iframe src="https://keep.google.com/" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+
+      <!-- ChatGPT Widget -->
+      <div class="widget" id="chatgpt">
+        <h2>ChatGPT</h2>
+        <iframe src="https://chat.openai.com/" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

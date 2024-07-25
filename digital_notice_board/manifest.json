@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Digital Notice Board",
+    "version": "1.0",
+    "description": "A digital notice board with multiple widgets to enhance collaboration and communication in a company.",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": [
+      "activeTab",
+      "storage"
+    ]
+  }
+  
